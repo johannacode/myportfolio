@@ -253,10 +253,11 @@
   <section id="contact">
     <h2 class="titre-section">Contact</h2>
     <div class="conteneur-contact">
-      <form class="formulaire-contact" action="https://formspree.io/f/xrboblao" method="POST">
-        <input type="text" placeholder="Votre nom" required>
-        <input type="email" placeholder="Votre email" required>
-        <textarea placeholder="Votre message" required></textarea>
+      <form class="formulaire-contact" action="https://formspree.io/f/xrboblao" method="POST" accept-charset="UTF-8">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="_replyto" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
         <button type="submit" class="bouton-appel">Envoyer</button>
       </form>
     </div>
